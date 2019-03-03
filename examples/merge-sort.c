@@ -55,18 +55,6 @@ static void split(struct list_head *src,
 
 static void list_mergesort(struct list_head *head)
 {
-    /*
-      struct list_head list_unsorted;
-      struct listitem *item = NULL, *is = NULL;
-
-      INIT_LIST_HEAD(&list_unsorted);
-      list_splice_init(head, &list_unsorted);
-
-      list_for_each_entry_safe (item, is, &list_unsorted, list) {
-          list_del(&item->list);
-          list_insert_sorted(item, head);
-      }
-    */
     struct list_head front, back;
 
     INIT_LIST_HEAD(&front);
